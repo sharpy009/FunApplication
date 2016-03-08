@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.buddys.funapplication.MainHomeActivity"
+    tools:showIn="@layout/activity_main_home">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Logon_Header_text"
+        android:id="@+id/LogonHeaderText"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Logon_Email_text"
+        android:id="@+id/LogonEmailText"
+        android:layout_below="@id/LogonHeaderText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/EmaileditText"
+        android:layout_above="@+id/LogonPasswordText"
+        android:layout_toRightOf="@+id/LogonPasswordText"
+        android:layout_toEndOf="@+id/LogonPasswordText"
+        android:layout_marginTop="25dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Logon_Password_text"
+        android:id="@+id/LogonPasswordText"
+        android:layout_below ="@id/LogonEmailText"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/PasswordeditText"
+        android:layout_below="@+id/LogonEmailText"
+        android:layout_toRightOf="@+id/LogonPasswordText"
+        android:layout_marginTop="15dp"
+
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Logon_Button_text"
+        android:id="@+id/LogonButtonText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>
